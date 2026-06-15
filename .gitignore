@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+yolov8-env/
+venv/
+.env/
+
+# Datasets
+dataset/
+dataset_v2/
+dataset_v3/
+dataset800_raw/
+
+# Training outputs
+runs/
+wandb/
+
+# Large model files
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# Temporary files
+temp_uploads/
+temp_results/
+*.mp4
+*.avi
+*.mov
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
