@@ -74,7 +74,7 @@ mask-detection/
 | Exp6 | YOLOv8s + dataset_v3 | 0.915 | 0.817 | 0.896 | 0.630 |
 | Exp7 | YOLOv8s + dataset_v3 + 数据增强 | 0.922 | 0.796 | 0.879 | 0.625 |
 
-注：上表统一采用各实验 `results.csv` 中 mAP50-95 最高轮次的数据，与自动汇总文件保持一致。
+注：Exp2 至 Exp6 采用各实验 `results.csv` 中 mAP50-95 最高轮次的数据；Exp7 采用已确认的 best.pt 最终验证结果，与自动汇总文件保持一致。
 
 ## 9. 最优方案
 

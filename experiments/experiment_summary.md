@@ -1,6 +1,6 @@
 # 实验结果汇总
 
-> 统一取各实验 `results.csv` 中 mAP50-95 最高轮次；提升量以该口径下的 Exp2 为基准。
+> Exp2-Exp6 取各实验 `results.csv` 中 mAP50-95 最高轮次；Exp7 采用已确认的 best.pt 最终验证结果。提升量以 Exp2 为基准。
 
 | 实验 | 方法 | Precision | Recall | mAP50 | mAP50-95 | 相对 Baseline 提升 | 结论 |
 |---|---|---:|---:|---:|---:|---:|---|
@@ -9,7 +9,7 @@
 | exp4_eca | YOLOv8s + ECA | 0.905 | 0.740 | 0.817 | 0.562 | -0.044 | 轻量注意力模块效果有限 |
 | exp5_dataaug | YOLOv8s + Data Augmentation | 0.962 | 0.770 | 0.873 | 0.614 | +0.009 | 数据增强带来明显提升 |
 | exp6_dataset_v3 | YOLOv8s + dataset_v3 | 0.915 | 0.817 | 0.896 | 0.630 | +0.025 | 数据扩充方案综合性能最优 |
-| exp7_v3_dataaug | YOLOv8s + dataset_v3 + Data Augmentation | 0.921 | 0.797 | 0.879 | 0.625 | +0.020 | 扩充数据集后继续增强，未超过 Exp6 |
+| exp7_v3_dataaug | YOLOv8s + dataset_v3 + Data Augmentation | 0.922 | 0.796 | 0.879 | 0.625 | +0.020 | 扩充数据集后继续增强，未超过 Exp6 |
 
 ## 提取记录
 

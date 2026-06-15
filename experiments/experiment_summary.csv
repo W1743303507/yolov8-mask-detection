@@ -4,4 +4,4 @@ exp3_cbam,YOLOv8s + CBAM,0.906,0.779,0.837,0.569,-0.036,注意力模块未带来
 exp4_eca,YOLOv8s + ECA,0.905,0.740,0.817,0.562,-0.044,轻量注意力模块效果有限
 exp5_dataaug,YOLOv8s + Data Augmentation,0.962,0.770,0.873,0.614,0.009,数据增强带来明显提升
 exp6_dataset_v3,YOLOv8s + dataset_v3,0.915,0.817,0.896,0.630,0.025,数据扩充方案综合性能最优
-exp7_v3_dataaug,YOLOv8s + dataset_v3 + Data Augmentation,0.921,0.797,0.879,0.625,0.020,扩充数据集后继续增强，未超过 Exp6
+exp7_v3_dataaug,YOLOv8s + dataset_v3 + Data Augmentation,0.922,0.796,0.879,0.625,0.020,扩充数据集后继续增强，未超过 Exp6

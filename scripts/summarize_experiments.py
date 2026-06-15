@@ -35,9 +35,13 @@ FIELDS = {
 
 
 def locate_results(experiment: str) -> Path:
-    preferred = ROOT / "runs" / "paper" / experiment / "results.csv"
-    if preferred.is_file():
-        return preferred
+    preferred_paths = [
+        ROOT / "runs" / "paper" / experiment / "results.csv",
+        ROOT / "runs" / "detect" / "runs" / "paper" / experiment / "results.csv",
+    ]
+    for preferred in preferred_paths:
+        if preferred.is_file():
+            return preferred
     matches = sorted((ROOT / "runs").glob(f"**/{experiment}/results.csv"))
     if not matches:
         raise FileNotFoundError(f"results.csv not found for {experiment}")
